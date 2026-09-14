@@ -1,0 +1,16 @@
+# Core ML stack (CPU)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.14.0
+
+transformers>=5.17.0
+peft>=0.20.0
+datasets>=5.0.1
+accelerate>=1.15.0
+scikit-learn>=1.9.1
+
+# Local model calls (baselines / synthetic data generation via Ollama HTTP API)
+requests>=2.31.0
+
+# Utilities
+pydantic>=2.0
+tqdm>=4.70.0
