@@ -2,16 +2,15 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+*.txt
+!requirements.txt
 
-# Data & model artifacts (large / generated — do not commit)
+# Raw scratch data only — processed synthetic dataset IS committed for reproducibility
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep
-models/*
-!models/.gitkeep
-eval/results/*
-!eval/results/.gitkeep
+
+# Model artifacts: commit the LoRA adapter itself, exclude bulky training checkpoints
+models/*/checkpoints/
 
 # OS
 .DS_Store

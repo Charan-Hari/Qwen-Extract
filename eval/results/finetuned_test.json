@@ -1,0 +1,1313 @@
+{
+  "summary": {
+    "json_validity_rate": 1.0,
+    "macro_f1": 0.431,
+    "per_field": {
+      "name": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "email": {
+        "precision": 0.133,
+        "recall": 0.133,
+        "f1": 0.133
+      },
+      "phone": {
+        "precision": 0.133,
+        "recall": 0.133,
+        "f1": 0.133
+      },
+      "skills": {
+        "precision": 0.875,
+        "recall": 0.812,
+        "f1": 0.842
+      },
+      "education": {
+        "precision": 0.545,
+        "recall": 0.522,
+        "f1": 0.533
+      },
+      "experience": {
+        "precision": 0.382,
+        "recall": 0.361,
+        "f1": 0.371
+      },
+      "total_years_experience": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "examples": [
+    {
+      "text": "Crystal Hernandez is a marketing coordinator at Gomez, Clayton and Boyer, where she worked from April 2023 to September 2025. She enjoyed generating various types of content and working on projects that involved self-assessment and trial operations. Her experience in data analysis and project management helped her develop strong skills in teamwork and communication. She also worked as a product manager at Perez, Myers and Abbott from July 2016 to December 2023, where she contributed to the development of new products and opportunities. In her previous role as a financial analyst at Clark Inc, from July 2016 to May 2017, she analyzed data and made decisions that impacted the company's strategy. She is passionate about learning and growing in her career, and she values collaboration and continuous improvement.",
+      "ground_truth": {
+        "name": "Crystal Hernandez",
+        "email": "paynejeffrey@example.org",
+        "phone": "(201)837-6686x41391",
+        "skills": [
+          "Excel",
+          "Data Analysis",
+          "Scrum",
+          "Node.js"
+        ],
+        "education": [
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "Jones-Martin University",
+            "year": "2011"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Marketing Coordinator",
+            "company": "Gomez, Clayton and Boyer",
+            "start_date": "Apr 2023",
+            "end_date": "Sep 2025",
+            "description": "Various generation yourself watch operation reason trial."
+          },
+          {
+            "title": "Product Manager",
+            "company": "Perez, Myers and Abbott",
+            "start_date": "Jul 2016",
+            "end_date": "Dec 2023",
+            "description": "Win time third unit make reveal opportunity bar city same build up."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Clark Inc",
+            "start_date": "Jul 2016",
+            "end_date": "May 2017",
+            "description": "Much pretty available value do audience while small."
+          }
+        ],
+        "total_years_experience": 5.7
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Crystal Hernandez\", \"email\": \"jane.doe@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Data Analysis\", \"Project Management\", \"Trial Operations\", \"Self-Assessment\"], \"education\": [{\"degree\": \"B.S. Computer Science\", \"institution\": \"State University\", \"year\": \"2018\"}], \"experience\": [{\"title\": \"Marketing Coordinator\", \"company\": \"Gomez, Clayton and Boyer\", \"start_date\": \"Apr 2023\", \"end_date\": \"Sep 2025\", \"description\": \"Generated various types of content and worked on projects involving self-assessment and trial operations.\"}, {\"title\": \"Product Manager\", \"company\": \"Perez, Myers and Abbott\", \"start_date\": \"Jul 2016\", \"end_date\": \"Dec 2023\", \"description\": \"Developed new products and opportunities, contributed to the company's strategy.\"}, {\"title\": \"Financial Analyst\", \"company\": \"Clark Inc\", \"start_date\": \"Jul 2016\", \"end_date\": \"May 2017\", \"description\": \"Analyzed data and made decisions that impacted the company's strategy.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Crystal Hernandez",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Data Analysis",
+          "Project Management",
+          "Trial Operations",
+          "Self-Assessment"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "State University",
+            "year": "2018"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Marketing Coordinator",
+            "company": "Gomez, Clayton and Boyer",
+            "start_date": "Apr 2023",
+            "end_date": "Sep 2025",
+            "description": "Generated various types of content and worked on projects involving self-assessment and trial operations."
+          },
+          {
+            "title": "Product Manager",
+            "company": "Perez, Myers and Abbott",
+            "start_date": "Jul 2016",
+            "end_date": "Dec 2023",
+            "description": "Developed new products and opportunities, contributed to the company's strategy."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Clark Inc",
+            "start_date": "Jul 2016",
+            "end_date": "May 2017",
+            "description": "Analyzed data and made decisions that impacted the company's strategy."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Melissa Alvarado is a systems administrator who enjoys working with Linux and JavaScript. She has experience in managing networks and systems, and she's also familiar with Git and GraphQL. Melissa has a B.S. in Mathematics from Kathleenborough College, earned in 2007. She worked at Salazar and Sons from October 2013 to December 2024, where she was a systems administrator. She also worked at Smith, Todd and Myers from May 2018 to present, as a marketing coordinator.",
+      "ground_truth": {
+        "name": "Melissa Alvarado",
+        "email": "harrellemily@example.org",
+        "phone": "265-528-9545x37761",
+        "skills": [
+          "Git",
+          "TypeScript",
+          "Linux",
+          "JavaScript",
+          "GraphQL"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Mathematics",
+            "institution": "Kathleenborough College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Systems Administrator",
+            "company": "Salazar and Sons",
+            "start_date": "Oct 2013",
+            "end_date": "Dec 2024",
+            "description": "Food country buy note candidate according stage debate model Congress once for ahead."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Smith, Todd and Myers",
+            "start_date": "May 2018",
+            "end_date": "Present",
+            "description": "Upon director system ask many career degree memory itself."
+          }
+        ],
+        "total_years_experience": 4.6
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Melissa Alvarado\", \"email\": \"juliette.mccall@example.org\", \"phone\": \"555-123-4567\", \"skills\": [\"Linux\", \"JavaScript\", \"Git\", \"GraphQL\"], \"education\": [{\"degree\": \"B.S. Mathematics\", \"institution\": \"Kathleenborough College\", \"year\": \"2007\"}], \"experience\": [{\"title\": \"Systems Administrator\", \"company\": \"Salazar and Sons\", \"start_date\": \"Oct 2013\", \"end_date\": \"Dec 2024\", \"description\": \"Managed networks and systems, and worked with Git and GraphQL.\"}, {\"title\": \"Marketing Coordinator\", \"company\": \"Smith, Todd and Myers\", \"start_date\": \"May 2018\", \"end_date\": \"Present\", \"description\": \"Worked with marketing and collaborated with teams.\"}], \"total_years_experience\": 10.5}",
+      "parsed": {
+        "name": "Melissa Alvarado",
+        "email": "juliette.mccall@example.org",
+        "phone": "555-123-4567",
+        "skills": [
+          "Linux",
+          "JavaScript",
+          "Git",
+          "GraphQL"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Mathematics",
+            "institution": "Kathleenborough College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Systems Administrator",
+            "company": "Salazar and Sons",
+            "start_date": "Oct 2013",
+            "end_date": "Dec 2024",
+            "description": "Managed networks and systems, and worked with Git and GraphQL."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Smith, Todd and Myers",
+            "start_date": "May 2018",
+            "end_date": "Present",
+            "description": "Worked with marketing and collaborated with teams."
+          }
+        ],
+        "total_years_experience": 10.5
+      }
+    },
+    {
+      "text": "Todd Sanchez is a skilled professional with a strong background in business and technology. He has experience in financial analysis and project management, and he is proficient in SQL, GraphQL, Linux, PowerBI, and Scrum. He has a degree in B.S. Electrical Engineering from Griffin-Bryan University and a B.A. in Business Administration from Dawntown College.\n\nHe worked as a Business Analyst at Daniels, Greene and Allen from October 2016 to present, where he gained experience in analyzing business processes and working with teams. He later moved to Cowan and Sons as a Financial Analyst from August 2019 to present, where he helped manage financial data and reports. In 2023, he joined Jennings, Hines and Allen as a Financial Analyst, where he is now working on projects that involve data analysis and team collaboration.\n\nHe values teamwork, continuous learning, and is passionate about improving processes and helping others succeed.",
+      "ground_truth": {
+        "name": "Todd Sanchez",
+        "email": "shepherdchristopher@example.net",
+        "phone": "448.438.5209",
+        "skills": [
+          "SQL",
+          "GraphQL",
+          "Linux",
+          "PowerBI",
+          "Scrum",
+          "Go"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Griffin-Bryan University",
+            "year": "2017"
+          },
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Dawntown College",
+            "year": "2017"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Business Analyst",
+            "company": "Daniels, Greene and Allen",
+            "start_date": "Oct 2016",
+            "end_date": "Present",
+            "description": "Ability garden despite policy may interview minute test probably coach box level choice."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Cowan and Sons",
+            "start_date": "Aug 2019",
+            "end_date": "Present",
+            "description": "Send place somebody through surface or shoulder article choose claim also."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Jennings, Hines and Allen",
+            "start_date": "Feb 2023",
+            "end_date": "Jan 2026",
+            "description": "We price center least have will senior team."
+          }
+        ],
+        "total_years_experience": 6.9
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Todd Sanchez\", \"email\": \"james.mccoy@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"SQL\", \"GraphQL\", \"Linux\", \"PowerBI\", \"Scrum\"], \"education\": [{\"degree\": \"B.S. Electrical Engineering\", \"institution\": \"Griffin-Bryan University\", \"year\": \"2016\"}, {\"degree\": \"B.A. Business Administration\", \"institution\": \"Dawntown College\", \"year\": \"2019\"}], \"experience\": [{\"title\": \"Business Analyst\", \"company\": \"Daniels, Greene and Allen\", \"start_date\": \"Oct 2016\", \"end_date\": \"Present\", \"description\": \"Analyzed business processes and worked with teams.\"}, {\"title\": \"Financial Analyst\", \"company\": \"Cowan and Sons\", \"start_date\": \"Aug 2019\", \"end_date\": \"Present\", \"description\": \"Managed financial data and reports.\"}, {\"title\": \"Financial Analyst\", \"company\": \"Jennings, Hines and Allen\", \"start_date\": \"2023\", \"end_date\": \"Present\", \"description\": \"Working on projects involving data analysis and team collaboration.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Todd Sanchez",
+        "email": "james.mccoy@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "SQL",
+          "GraphQL",
+          "Linux",
+          "PowerBI",
+          "Scrum"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Griffin-Bryan University",
+            "year": "2016"
+          },
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Dawntown College",
+            "year": "2019"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Business Analyst",
+            "company": "Daniels, Greene and Allen",
+            "start_date": "Oct 2016",
+            "end_date": "Present",
+            "description": "Analyzed business processes and worked with teams."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Cowan and Sons",
+            "start_date": "Aug 2019",
+            "end_date": "Present",
+            "description": "Managed financial data and reports."
+          },
+          {
+            "title": "Financial Analyst",
+            "company": "Jennings, Hines and Allen",
+            "start_date": "2023",
+            "end_date": "Present",
+            "description": "Working on projects involving data analysis and team collaboration."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Sarah Carter is a data analyst with experience in the fields of machine learning and React. She has worked at West-Mendoza, where she helped understand the rest next computer that force we. She also worked as a QA engineer at Perez, Wood and Vargas, where she handled forward story charge decision spend truth letter mother reason result lay. In her current role as a sales associate at Lee PLC, she works with the team to mother show red figure member subject care behind red technology. She has a B.A. in Business Administration from Jackson, Johnson and Jones University, and has spent six and a half years in the field.",
+      "ground_truth": {
+        "name": "Sarah Carter",
+        "email": "kharris@example.com",
+        "phone": "(394)492-4073x119",
+        "skills": [
+          "Kubernetes",
+          "Machine Learning",
+          "React",
+          "GraphQL"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Jackson, Johnson and Jones University",
+            "year": "2022"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Data Analyst",
+            "company": "West-Mendoza",
+            "start_date": "Sep 2015",
+            "end_date": "Aug 2019",
+            "description": "Understand rest next computer that force we."
+          },
+          {
+            "title": "QA Engineer",
+            "company": "Perez, Wood and Vargas",
+            "start_date": "Sep 2012",
+            "end_date": "Sep 2017",
+            "description": "Forward story charge decision spend truth letter mother reason result lay."
+          },
+          {
+            "title": "Sales Associate",
+            "company": "Lee PLC",
+            "start_date": "Sep 2021",
+            "end_date": "Sep 2026",
+            "description": "Mother show red figure member subject care behind red technology team entire."
+          }
+        ],
+        "total_years_experience": 6.7
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Sarah Carter\", \"email\": \"juliette.mccall@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"machine learning\", \"React\"], \"education\": [{\"degree\": \"B.A. Business Administration\", \"institution\": \"Jackson, Johnson and Jones University\", \"year\": \"2018\"}], \"experience\": [{\"title\": \"Data Analyst\", \"company\": \"West-Mendoza\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Helped understand the rest next computer that force we.\"}, {\"title\": \"QA Engineer\", \"company\": \"Perez, Wood and Vargas\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Handle forward story charge decision spend truth letter mother reason result lay.\"}, {\"title\": \"Sales Associate\", \"company\": \"Lee PLC\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Work with the team to mother show red figure member subject care behind red technology.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Sarah Carter",
+        "email": "juliette.mccall@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "machine learning",
+          "React"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Jackson, Johnson and Jones University",
+            "year": "2018"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Data Analyst",
+            "company": "West-Mendoza",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Helped understand the rest next computer that force we."
+          },
+          {
+            "title": "QA Engineer",
+            "company": "Perez, Wood and Vargas",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Handle forward story charge decision spend truth letter mother reason result lay."
+          },
+          {
+            "title": "Sales Associate",
+            "company": "Lee PLC",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Work with the team to mother show red figure member subject care behind red technology."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Katherine Sanchez is a systems administrator at Johnson-Berry, where she manages the infrastructure and ensures everything runs smoothly. She's passionate about technology and loves working with the latest tools. She also works as a software engineer at Fuentes Inc, where she develops and maintains applications. In her role as an operations manager at Robinson-Williams, she oversees the day-to-day operations and helps keep things running efficiently. She's always learning and adapting, which makes her a great fit for any team.",
+      "ground_truth": {
+        "name": "Katherine Sanchez",
+        "email": "parkerzachary@example.org",
+        "phone": "6648501089",
+        "skills": [
+          "Agile",
+          "React",
+          "C++",
+          "GraphQL",
+          "Go"
+        ],
+        "education": [
+          {
+            "degree": "M.S. Data Science",
+            "institution": "Thomasmouth College",
+            "year": "2010"
+          },
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "West Joseport College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Systems Administrator",
+            "company": "Johnson-Berry",
+            "start_date": "Oct 2018",
+            "end_date": "Present",
+            "description": "Huge time although gun receive when risk huge."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Fuentes Inc",
+            "start_date": "Nov 2016",
+            "end_date": "Mar 2022",
+            "description": "Everything anything raise rule least science foreign machine public theory small exactly maybe."
+          },
+          {
+            "title": "Operations Manager",
+            "company": "Robinson-Williams",
+            "start_date": "Mar 2017",
+            "end_date": "May 2021",
+            "description": "People continue would save number be animal soldier experience agreement result."
+          }
+        ],
+        "total_years_experience": 7.3
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Katherine Sanchez\", \"email\": \"katherine.sanchez@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Systems Administration\", \"Software Engineering\", \"Operations Management\"], \"education\": [{\"degree\": \"B.S. Computer Science\", \"institution\": \"State University\", \"year\": \"2018\"}], \"experience\": [{\"title\": \"Systems Administrator\", \"company\": \"Johnson-Berry\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Managed infrastructure and ensured everything ran smoothly.\"}, {\"title\": \"Software Engineer\", \"company\": \"Fuentes Inc\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Developed and maintained applications.\"}, {\"title\": \"Operations Manager\", \"company\": \"Robinson-Williams\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Oversees day-to-day operations and helps keep things running efficiently.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Katherine Sanchez",
+        "email": "katherine.sanchez@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Systems Administration",
+          "Software Engineering",
+          "Operations Management"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "State University",
+            "year": "2018"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Systems Administrator",
+            "company": "Johnson-Berry",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Managed infrastructure and ensured everything ran smoothly."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Fuentes Inc",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Developed and maintained applications."
+          },
+          {
+            "title": "Operations Manager",
+            "company": "Robinson-Williams",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Oversees day-to-day operations and helps keep things running efficiently."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "David Todd is a DevOps Engineer at Wilson, Perez and Beard, where he worked from June 2016 to April 2023. He developed systems that help size stars in deals and manage activity in the market. David also has skills in Docker, React, and Tableau. He graduated with an MBA from East Tonimouth College in 2014 and an Associate Degree in Information Technology from Stokes PLC University in 2020.",
+      "ground_truth": {
+        "name": "David Todd",
+        "email": "henrystacy@example.org",
+        "phone": "+1-884-592-9392x343",
+        "skills": [
+          "Docker",
+          "React",
+          "Tableau"
+        ],
+        "education": [
+          {
+            "degree": "MBA",
+            "institution": "East Tonimouth College",
+            "year": "2014"
+          },
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "Stokes PLC University",
+            "year": "2020"
+          }
+        ],
+        "experience": [
+          {
+            "title": "DevOps Engineer",
+            "company": "Wilson, Perez and Beard",
+            "start_date": "Jun 2016",
+            "end_date": "Apr 2023",
+            "description": "Development which size star deal should training then activity market official."
+          }
+        ],
+        "total_years_experience": 2.5
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"David Todd\", \"email\": \"james.mccoy@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Docker\", \"React\", \"Tableau\"], \"education\": [{\"degree\": \"MBA\", \"institution\": \"East Tonimouth College\", \"year\": \"2014\"}, {\"degree\": \"Associate Degree in Information Technology\", \"institution\": \"Stokes PLC University\", \"year\": \"2020\"}], \"experience\": [{\"title\": \"DevOps Engineer\", \"company\": \"Wilson, Perez and Beard\", \"start_date\": \"Jun 2016\", \"end_date\": \"Apr 2023\", \"description\": \"Developed systems that help size stars in deals and manage activity in the market.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "David Todd",
+        "email": "james.mccoy@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Docker",
+          "React",
+          "Tableau"
+        ],
+        "education": [
+          {
+            "degree": "MBA",
+            "institution": "East Tonimouth College",
+            "year": "2014"
+          },
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "Stokes PLC University",
+            "year": "2020"
+          }
+        ],
+        "experience": [
+          {
+            "title": "DevOps Engineer",
+            "company": "Wilson, Perez and Beard",
+            "start_date": "Jun 2016",
+            "end_date": "Apr 2023",
+            "description": "Developed systems that help size stars in deals and manage activity in the market."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Sarah Baird is a software engineer with a background in economics. She works at Baker, Clark and Phillips, where she spent time as a software engineer from October 2018 to October 2019. She is skilled in Excel, Java, and CI/CD. She graduated from Sarahbury College with a B.A. in Economics in 2013.",
+      "ground_truth": {
+        "name": "Sarah Baird",
+        "email": "brookemoore@example.com",
+        "phone": "975.229.8577",
+        "skills": [
+          "Excel",
+          "Java",
+          "CI/CD"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "Sarahbury College",
+            "year": "2013"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "company": "Baker, Clark and Phillips",
+            "start_date": "Oct 2018",
+            "end_date": "Oct 2019",
+            "description": "Amount expect beautiful risk spend government up situation able government indicate."
+          }
+        ],
+        "total_years_experience": 3.3
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Sarah Baird\", \"email\": \"jane@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Excel\", \"Java\", \"CI/CD\"], \"education\": [{\"degree\": \"B.A. Economics\", \"institution\": \"Sarahbury College\", \"year\": \"2013\"}], \"experience\": [{\"title\": \"Software Engineer\", \"company\": \"Baker, Clark and Phillips\", \"start_date\": \"Oct 2018\", \"end_date\": \"Oct 2019\", \"description\": \"Built dashboards and automated reporting pipelines.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Sarah Baird",
+        "email": "jane@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Excel",
+          "Java",
+          "CI/CD"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "Sarahbury College",
+            "year": "2013"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "company": "Baker, Clark and Phillips",
+            "start_date": "Oct 2018",
+            "end_date": "Oct 2019",
+            "description": "Built dashboards and automated reporting pipelines."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Steven Edwards is a professional with a background in economics and data science. He has experience in business analysis, devops, software engineering, and systems administration. He has worked at David Group, Cochran-Garcia, Watts-Christian, and Rodriguez, Ingram and Williams. He has a degree in B.A. Economics from West Kristinaburgh College and an M.S. in Data Science from Port Kennethborough College. His skills include PowerBI, Scrum, C++, Terraform, SQL, TypeScript, and React. He is currently looking for a new opportunity.",
+      "ground_truth": {
+        "name": "Steven Edwards",
+        "email": "higginsdanielle@example.net",
+        "phone": "(303)785-9997",
+        "skills": [
+          "PowerBI",
+          "Scrum",
+          "C++",
+          "Terraform",
+          "SQL",
+          "TypeScript",
+          "React"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "West Kristinaburgh College",
+            "year": "2013"
+          },
+          {
+            "degree": "M.S. Data Science",
+            "institution": "Port Kennethborough College",
+            "year": "2011"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Business Analyst",
+            "company": "David Group",
+            "start_date": "Oct 2022",
+            "end_date": "May 2024",
+            "description": "Small what future would check challenge those section leave speak significant society likely."
+          },
+          {
+            "title": "DevOps Engineer",
+            "company": "Cochran-Garcia",
+            "start_date": "Feb 2012",
+            "end_date": "Present",
+            "description": "Stand our everyone person huge hit entire audience consider."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Watts-Christian",
+            "start_date": "Jan 2022",
+            "end_date": "Oct 2025",
+            "description": "At half important remember fish five care."
+          },
+          {
+            "title": "Systems Administrator",
+            "company": "Rodriguez, Ingram and Williams",
+            "start_date": "Sep 2017",
+            "end_date": "Jul 2022",
+            "description": "Your grow machine available truth realize or degree."
+          }
+        ],
+        "total_years_experience": 6.2
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Steven Edwards\", \"email\": \"julian.lopez@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"PowerBI\", \"Scrum\", \"C++\", \"Terraform\", \"SQL\", \"TypeScript\", \"React\"], \"education\": [{\"degree\": \"B.A. Economics\", \"institution\": \"West Kristinaburgh College\", \"year\": \"2018\"}, {\"degree\": \"M.S. Data Science\", \"institution\": \"Port Kennethborough College\", \"year\": \"2019\"}], \"experience\": [{\"title\": \"Business Analyst\", \"company\": \"David Group\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}, {\"title\": \"DevOps\", \"company\": \"Cochran-Garcia\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}, {\"title\": \"Software Engineer\", \"company\": \"Watts-Christian\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}, {\"title\": \"Systems Administrator\", \"company\": \"Rodriguez, Ingram and Williams\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Steven Edwards",
+        "email": "julian.lopez@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "PowerBI",
+          "Scrum",
+          "C++",
+          "Terraform",
+          "SQL",
+          "TypeScript",
+          "React"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "West Kristinaburgh College",
+            "year": "2018"
+          },
+          {
+            "degree": "M.S. Data Science",
+            "institution": "Port Kennethborough College",
+            "year": "2019"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Business Analyst",
+            "company": "David Group",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          },
+          {
+            "title": "DevOps",
+            "company": "Cochran-Garcia",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Watts-Christian",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          },
+          {
+            "title": "Systems Administrator",
+            "company": "Rodriguez, Ingram and Williams",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Phyllis Jones is a sales associate at Mcintyre Group, where she worked from June 2017 to May 2021. She handled phone quality head crime toward tough. She has a B.A. in Economics from Powell, Zuniga and Rivera University in 2022 and from South Erikaborough College in 2006. She is good with Go, TypeScript, Excel, and project management. Her phone number is 3202568364, and her email is theresabrown@example.net.",
+      "ground_truth": {
+        "name": "Phyllis Jones",
+        "email": "theresabrown@example.net",
+        "phone": "3202568364",
+        "skills": [
+          "Go",
+          "TypeScript",
+          "Excel",
+          "Project Management"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "Powell, Zuniga and Rivera University",
+            "year": "2022"
+          },
+          {
+            "degree": "B.A. Economics",
+            "institution": "South Erikaborough College",
+            "year": "2006"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "company": "Mcintyre Group",
+            "start_date": "Jun 2017",
+            "end_date": "May 2021",
+            "description": "Phone quality head crime toward tough."
+          }
+        ],
+        "total_years_experience": 3.6
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Phyllis Jones\", \"email\": \"thereSabrown@example.net\", \"phone\": \"3202568364\", \"skills\": [\"Go\", \"TypeScript\", \"Excel\", \"Project Management\"], \"education\": [{\"degree\": \"B.A. Economics\", \"institution\": \"Powell, Zuniga and Rivera University\", \"year\": \"2022\"}, {\"degree\": \"B.S. Computer Science\", \"institution\": \"South Erikaborough College\", \"year\": \"2006\"}], \"experience\": [{\"title\": \"Sales Associate\", \"company\": \"Mcintyre Group\", \"start_date\": \"Jun 2017\", \"end_date\": \"May 2021\", \"description\": \"Phone quality head crime toward tough.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Phyllis Jones",
+        "email": "thereSabrown@example.net",
+        "phone": "3202568364",
+        "skills": [
+          "Go",
+          "TypeScript",
+          "Excel",
+          "Project Management"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Economics",
+            "institution": "Powell, Zuniga and Rivera University",
+            "year": "2022"
+          },
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "South Erikaborough College",
+            "year": "2006"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "company": "Mcintyre Group",
+            "start_date": "Jun 2017",
+            "end_date": "May 2021",
+            "description": "Phone quality head crime toward tough."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Melanie Johnson is a self-taught developer with a passion for solving complex problems. She has experience in managing operations, working as a QA engineer, and coordinating marketing efforts. Her skills include Node.js, Kubernetes, Azure, and Terraform. Melanie has a B.S. in Electrical Engineering from Rodriguez, Higgins and Graves University, and an Associate Degree in Information Technology from South Juanfurt College. She has worked at Peters-White from February 2019 to January 2024, and at Myers Inc from August 2013 to March 2022. She also worked at Hammond-Shaffer from September 2014 to December 2018.",
+      "ground_truth": {
+        "name": "Melanie Johnson",
+        "email": "griffincaleb@example.net",
+        "phone": "917-906-3191x386",
+        "skills": [
+          "Node.js",
+          "Kubernetes",
+          "Azure",
+          "Terraform"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Rodriguez, Higgins and Graves University",
+            "year": "2022"
+          },
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "South Juanfurt College",
+            "year": "2012"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Operations Manager",
+            "company": "Peters-White",
+            "start_date": "Feb 2019",
+            "end_date": "Jan 2024",
+            "description": "Most base respond listen subject drive week thought ask shoulder science find yourself."
+          },
+          {
+            "title": "QA Engineer",
+            "company": "Myers Inc",
+            "start_date": "Aug 2013",
+            "end_date": "Mar 2022",
+            "description": "Style project try national tend yes painting up myself pretty wear common office."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Hammond-Shaffer",
+            "start_date": "Sep 2014",
+            "end_date": "Dec 2018",
+            "description": "Doctor west wait impact wide on much road wide back science feeling reason not."
+          }
+        ],
+        "total_years_experience": 5.4
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Melanie Johnson\", \"email\": \"jane@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Node.js\", \"Kubernetes\", \"Azure\", \"Terraform\"], \"education\": [{\"degree\": \"B.S. Electrical Engineering\", \"institution\": \"Rodriguez, Higgins and Graves University\", \"year\": \"2018\"}, {\"degree\": \"Associate Degree Information Technology\", \"institution\": \"South Juanfurt College\", \"year\": \"2013\"}], \"experience\": [{\"title\": \"QA Engineer\", \"company\": \"Peters-White\", \"start_date\": \"Feb 2019\", \"end_date\": \"Jan 2024\", \"description\": \"Managed operations and worked with QA tools.\"}, {\"title\": \"Marketing Coordinator\", \"company\": \"Myers Inc\", \"start_date\": \"Aug 2013\", \"end_date\": \"Mar 2022\", \"description\": \"Coordinated marketing efforts and managed operations.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Melanie Johnson",
+        "email": "jane@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Node.js",
+          "Kubernetes",
+          "Azure",
+          "Terraform"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Rodriguez, Higgins and Graves University",
+            "year": "2018"
+          },
+          {
+            "degree": "Associate Degree Information Technology",
+            "institution": "South Juanfurt College",
+            "year": "2013"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Peters-White",
+            "start_date": "Feb 2019",
+            "end_date": "Jan 2024",
+            "description": "Managed operations and worked with QA tools."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Myers Inc",
+            "start_date": "Aug 2013",
+            "end_date": "Mar 2022",
+            "description": "Coordinated marketing efforts and managed operations."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "James Williams is a passionate professional with a strong background in data analysis and business operations. He has experience in both data analysis and business analysis roles, combining his technical skills with a deep understanding of business processes. His skills include Scrum, Excel, JavaScript, Data Analysis, CI/CD, TypeScript, and PowerBI.\n\nEducation-wise, James completed a B.S. in Mathematics from King, Taylor and Simpson University in 2014, and a B.A. in Business Administration from Brady Group University in 2020. These experiences have provided him with a solid foundation in analytical thinking and problem-solving.\n\nIn his current role as a Sales Associate at Stevenson-Anderson, James has gained valuable experience in customer service and team collaboration. He has also held a Data Analyst position at Collins Inc, where he worked with data to drive business decisions. Additionally, he has been a Business Analyst at Santana, Guerra and Orozco, where he applied his skills in data interpretation and business process improvement.\n\nJames is continuously learning and growing, always seeking to enhance his technical and professional capabilities. His dedication to his work and his passion for data analysis make him a valuable asset to any team he joins.",
+      "ground_truth": {
+        "name": "James Williams",
+        "email": "rogersemily@example.net",
+        "phone": "374-470-4145x79013",
+        "skills": [
+          "Scrum",
+          "Excel",
+          "JavaScript",
+          "Data Analysis",
+          "CI/CD",
+          "TypeScript",
+          "PowerBI"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Mathematics",
+            "institution": "King, Taylor and Simpson University",
+            "year": "2014"
+          },
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Brady Group University",
+            "year": "2020"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "company": "Stevenson-Anderson",
+            "start_date": "Feb 2018",
+            "end_date": "Present",
+            "description": "Matter unit arrive central back popular."
+          },
+          {
+            "title": "Data Analyst",
+            "company": "Collins Inc",
+            "start_date": "Sep 2021",
+            "end_date": "Jan 2025",
+            "description": "Table scientist season film pass current tell father treatment continue ten former black."
+          },
+          {
+            "title": "Business Analyst",
+            "company": "Santana, Guerra and Orozco",
+            "start_date": "Apr 2013",
+            "end_date": "Sep 2014",
+            "description": "Contain note imagine less hundred live glass whom analysis themselves today season Democrat."
+          }
+        ],
+        "total_years_experience": 10.0
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"James Williams\", \"email\": \"james.williams@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Scrum\", \"Excel\", \"JavaScript\", \"Data Analysis\", \"CI/CD\", \"TypeScript\", \"PowerBI\"], \"education\": [{\"degree\": \"B.S. Mathematics\", \"institution\": \"King, Taylor and Simpson University\", \"year\": \"2014\"}, {\"degree\": \"B.A. Business Administration\", \"institution\": \"Brady Group University\", \"year\": \"2020\"}], \"experience\": [{\"title\": \"Sales Associate\", \"company\": \"Stevenson-Anderson\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Customer service and team collaboration.\"}, {\"title\": \"Data Analyst\", \"company\": \"Collins Inc\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}, {\"title\": \"Business Analyst\", \"company\": \"Santana, Guerra and Orozco\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Applied data interpretation and business process improvement.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "James Williams",
+        "email": "james.williams@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Scrum",
+          "Excel",
+          "JavaScript",
+          "Data Analysis",
+          "CI/CD",
+          "TypeScript",
+          "PowerBI"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Mathematics",
+            "institution": "King, Taylor and Simpson University",
+            "year": "2014"
+          },
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Brady Group University",
+            "year": "2020"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "company": "Stevenson-Anderson",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Customer service and team collaboration."
+          },
+          {
+            "title": "Data Analyst",
+            "company": "Collins Inc",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          },
+          {
+            "title": "Business Analyst",
+            "company": "Santana, Guerra and Orozco",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Applied data interpretation and business process improvement."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Catherine Gibbs is a skilled individual with a background in computer science and information technology. She has experience in financial analysis and data visualization. She is proficient in machine learning, JavaScript, and Tableau. She attended Port Lauren College for a B.S. in Computer Science in 2010 and New Erika College for an Associate Degree in Information Technology in 2012. She is currently working as a Financial Analyst at Hensley, Bennett and Lee, where she has been employed since October 2019. She is passionate about data analysis and enjoys working with visual tools like Tableau.",
+      "ground_truth": {
+        "name": "Catherine Gibbs",
+        "email": "lopezkyle@example.com",
+        "phone": "+1-579-217-9596x74100",
+        "skills": [
+          "Machine Learning",
+          "JavaScript",
+          "Tableau"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "Port Lauren College",
+            "year": "2010"
+          },
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "New Erika College",
+            "year": "2012"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Financial Analyst",
+            "company": "Hensley, Bennett and Lee",
+            "start_date": "Oct 2019",
+            "end_date": "May 2025",
+            "description": "Different itself less particularly onto son show guy."
+          }
+        ],
+        "total_years_experience": 1.3
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Catherine Gibbs\", \"email\": \"juliette.mccall@example.org\", \"phone\": \"555-123-4567\", \"skills\": [\"Machine Learning\", \"JavaScript\", \"Tableau\"], \"education\": [{\"degree\": \"B.S. Computer Science\", \"institution\": \"Port Lauren College\", \"year\": \"2010\"}, {\"degree\": \"Associate Degree in Information Technology\", \"institution\": \"New Erika College\", \"year\": \"2012\"}], \"experience\": [{\"title\": \"Financial Analyst\", \"company\": \"Hensley, Bennett and Lee\", \"start_date\": \"Oct 2019\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Catherine Gibbs",
+        "email": "juliette.mccall@example.org",
+        "phone": "555-123-4567",
+        "skills": [
+          "Machine Learning",
+          "JavaScript",
+          "Tableau"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "Port Lauren College",
+            "year": "2010"
+          },
+          {
+            "degree": "Associate Degree in Information Technology",
+            "institution": "New Erika College",
+            "year": "2012"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Financial Analyst",
+            "company": "Hensley, Bennett and Lee",
+            "start_date": "Oct 2019",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Ronnie Petersen is a QA Engineer at Moore, Hudson and Brown, where he researched into husband challenge oil himself. He worked as a Software Engineer at Robinson, Warren and Brown, where he asked character someone behavior respond policy street. He has a B.A. in Business Administration from Munoz Group University, 2006. He speaks SQL, Excel, PowerBI, and Python. His phone number is (242)496-2575x6904. His email is ywarren@example.net.",
+      "ground_truth": {
+        "name": "Ronnie Petersen",
+        "email": "ywarren@example.net",
+        "phone": "(242)496-2575x6904",
+        "skills": [
+          "SQL",
+          "Excel",
+          "PowerBI",
+          "Python"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Munoz Group University",
+            "year": "2006"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Moore, Hudson and Brown",
+            "start_date": "Mar 2024",
+            "end_date": "May 2026",
+            "description": "Research into husband challenge oil himself."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Robinson, Warren and Brown",
+            "start_date": "May 2022",
+            "end_date": "Present",
+            "description": "Ask character someone behavior respond policy street."
+          }
+        ],
+        "total_years_experience": 3.5
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Ronnie Petersen\", \"email\": \"ywarren@example.net\", \"phone\": \"(242)496-2575x6904\", \"skills\": [\"SQL\", \"Excel\", \"PowerBI\", \"Python\"], \"education\": [{\"degree\": \"B.A. Business Administration\", \"institution\": \"Munoz Group University\", \"year\": \"2006\"}], \"experience\": [{\"title\": \"QA Engineer\", \"company\": \"Moore, Hudson and Brown\", \"start_date\": \"Jun 2018\", \"end_date\": \"Present\", \"description\": \"Research into husband challenge oil himself.\"}, {\"title\": \"Software Engineer\", \"company\": \"Robinson, Warren and Brown\", \"start_date\": \"Jan 2018\", \"end_date\": \"Present\", \"description\": \"Character someone behavior respond policy street.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Ronnie Petersen",
+        "email": "ywarren@example.net",
+        "phone": "(242)496-2575x6904",
+        "skills": [
+          "SQL",
+          "Excel",
+          "PowerBI",
+          "Python"
+        ],
+        "education": [
+          {
+            "degree": "B.A. Business Administration",
+            "institution": "Munoz Group University",
+            "year": "2006"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Moore, Hudson and Brown",
+            "start_date": "Jun 2018",
+            "end_date": "Present",
+            "description": "Research into husband challenge oil himself."
+          },
+          {
+            "title": "Software Engineer",
+            "company": "Robinson, Warren and Brown",
+            "start_date": "Jan 2018",
+            "end_date": "Present",
+            "description": "Character someone behavior respond policy street."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Kayla Hurley is a systems administrator who works at Nelson, Dudley and Odom. She enjoys working with Docker, Terraform, JavaScript, Kubernetes, and Scrum. She has a B.S. in Computer Science from Gabriellahaven College, earned in 2007. She has also worked as a QA Engineer at Perez, Stephenson and Lucas from 2020 to 2025 and as a Business Analyst at Rogers-Hoffman since 2015. She is passionate about learning and growing in her career.",
+      "ground_truth": {
+        "name": "Kayla Hurley",
+        "email": "moorewayne@example.com",
+        "phone": "+1-325-956-1414x04873",
+        "skills": [
+          "Docker",
+          "Terraform",
+          "JavaScript",
+          "Kubernetes",
+          "Scrum",
+          "Java"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "Gabriellahaven College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Systems Administrator",
+            "company": "Nelson, Dudley and Odom",
+            "start_date": "May 2018",
+            "end_date": "Present",
+            "description": "Firm forward recognize he stay doctor everyone require seek goal learn."
+          },
+          {
+            "title": "QA Engineer",
+            "company": "Perez, Stephenson and Lucas",
+            "start_date": "Dec 2020",
+            "end_date": "May 2025",
+            "description": "Range lay score onto series music dream."
+          },
+          {
+            "title": "Business Analyst",
+            "company": "Rogers-Hoffman",
+            "start_date": "Mar 2015",
+            "end_date": "Present",
+            "description": "Us individual and when eat push determine education traditional protect."
+          }
+        ],
+        "total_years_experience": 6.6
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Kayla Hurley\", \"email\": \"kayla.hurley@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Docker\", \"Terraform\", \"JavaScript\", \"Kubernetes\", \"Scrum\"], \"education\": [{\"degree\": \"B.S. Computer Science\", \"institution\": \"Gabriellahaven College\", \"year\": \"2007\"}], \"experience\": [{\"title\": \"QA Engineer\", \"company\": \"Perez, Stephenson and Lucas\", \"start_date\": \"2020\", \"end_date\": \"2025\", \"description\": \"Built dashboards and automated reporting pipelines.\"}, {\"title\": \"Business Analyst\", \"company\": \"Rogers-Hoffman\", \"start_date\": \"2015\", \"end_date\": \"Present\", \"description\": \"Built dashboards and automated reporting pipelines.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Kayla Hurley",
+        "email": "kayla.hurley@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Docker",
+          "Terraform",
+          "JavaScript",
+          "Kubernetes",
+          "Scrum"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Computer Science",
+            "institution": "Gabriellahaven College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Perez, Stephenson and Lucas",
+            "start_date": "2020",
+            "end_date": "2025",
+            "description": "Built dashboards and automated reporting pipelines."
+          },
+          {
+            "title": "Business Analyst",
+            "company": "Rogers-Hoffman",
+            "start_date": "2015",
+            "end_date": "Present",
+            "description": "Built dashboards and automated reporting pipelines."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    },
+    {
+      "text": "Brian Marshall is a self-taught developer with a passion for data and problem-solving. He has experience in several areas including Python, data analysis, GraphQL, and Git. He attended Sandrafurt College and earned a B.S. in Electrical Engineering in 2007. \n\nHe worked as a QA Engineer at Garcia, Santos and Garcia from July 2022 to April 2025, where he gained experience in testing and quality assurance. He also worked as a Marketing Coordinator at Moore LLC from February 2021 to March 2022, where he managed marketing campaigns and promoted products. \n\nIn addition, he worked as a Data Analyst at Hatfield Inc from May 2015 to March 2025, where he analyzed data and supported business decisions. He is currently looking for new opportunities in the field.",
+      "ground_truth": {
+        "name": "Brian Marshall",
+        "email": "ddavis@example.net",
+        "phone": "001-671-450-9473x091",
+        "skills": [
+          "Python",
+          "Data Analysis",
+          "GraphQL",
+          "Git"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Sandrafurt College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Garcia, Santos and Garcia",
+            "start_date": "Jul 2022",
+            "end_date": "Apr 2025",
+            "description": "Word by Democrat issue course address bring listen example."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Moore LLC",
+            "start_date": "Feb 2021",
+            "end_date": "Mar 2022",
+            "description": "Traditional training thing turn many break quality various television."
+          },
+          {
+            "title": "Data Analyst",
+            "company": "Hatfield Inc",
+            "start_date": "May 2015",
+            "end_date": "Mar 2025",
+            "description": "Perhaps usually moment what some yourself may economy wrong join."
+          }
+        ],
+        "total_years_experience": 7.1
+      },
+      "raw_output": "<think>\n\n</think>\n\n{\"name\": \"Brian Marshall\", \"email\": \"james.mccoy@example.com\", \"phone\": \"555-123-4567\", \"skills\": [\"Python\", \"Data Analysis\", \"GraphQL\", \"Git\", \"SQL\", \"Project Management\"], \"education\": [{\"degree\": \"B.S. Electrical Engineering\", \"institution\": \"Sandrafurt College\", \"year\": \"2007\"}], \"experience\": [{\"title\": \"QA Engineer\", \"company\": \"Garcia, Santos and Garcia\", \"start_date\": \"Jul 2022\", \"end_date\": \"Apr 2025\", \"description\": \"Tested and ensured quality of software products.\"}, {\"title\": \"Marketing Coordinator\", \"company\": \"Moore LLC\", \"start_date\": \"Feb 2021\", \"end_date\": \"Mar 2022\", \"description\": \"Managed marketing campaigns and promoted products.\"}, {\"title\": \"Data Analyst\", \"company\": \"Hatfield Inc\", \"start_date\": \"May 2015\", \"end_date\": \"Mar 2025\", \"description\": \"Analyzed data and supported business decisions.\"}], \"total_years_experience\": 6.5}",
+      "parsed": {
+        "name": "Brian Marshall",
+        "email": "james.mccoy@example.com",
+        "phone": "555-123-4567",
+        "skills": [
+          "Python",
+          "Data Analysis",
+          "GraphQL",
+          "Git",
+          "SQL",
+          "Project Management"
+        ],
+        "education": [
+          {
+            "degree": "B.S. Electrical Engineering",
+            "institution": "Sandrafurt College",
+            "year": "2007"
+          }
+        ],
+        "experience": [
+          {
+            "title": "QA Engineer",
+            "company": "Garcia, Santos and Garcia",
+            "start_date": "Jul 2022",
+            "end_date": "Apr 2025",
+            "description": "Tested and ensured quality of software products."
+          },
+          {
+            "title": "Marketing Coordinator",
+            "company": "Moore LLC",
+            "start_date": "Feb 2021",
+            "end_date": "Mar 2022",
+            "description": "Managed marketing campaigns and promoted products."
+          },
+          {
+            "title": "Data Analyst",
+            "company": "Hatfield Inc",
+            "start_date": "May 2015",
+            "end_date": "Mar 2025",
+            "description": "Analyzed data and supported business decisions."
+          }
+        ],
+        "total_years_experience": 6.5
+      }
+    }
+  ]
+}
