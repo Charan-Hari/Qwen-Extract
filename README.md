@@ -80,7 +80,7 @@ CPU, no cloud, no API keys, no cost.
 
 ## Requirements
 
-- Python 3.10+ (developed against 3.14)
+- Python 3.14+ (works with 3.10)
 - [Ollama](https://ollama.com) (free, local, no account required) — used for baselines and
   synthetic data generation
 - No cloud accounts, no API keys, no credit card — everything runs locally
